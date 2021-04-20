@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:weightSum="1"
+    android:background="#94CAC6C6">
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp">
+        <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/user" />
+        <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="75dp"
+        android:src="@mipmap/pwd" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="135dp"
+            android:src="@mipmap/pwd" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="190dp"
+            android:src="@mipmap/phone"
+           />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/email"
+            />
+
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edit_name"
+        android:layout_alignParentTop="true"
+        android:hint="请输入您的用户名"
+        android:paddingLeft="38dp"
+        />
+        <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="38dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pwd_once"
+        android:hint="请输入您的密码"
+        android:layout_below="@+id/edit_name" />
+        <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:paddingLeft="38dp"
+        android:ems="10"
+        android:id="@+id/pwd_twice"
+        android:layout_below="@+id/pwd_once"
+        android:layout_centerHorizontal="true"
+        android:hint="请确认您的密码" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:inputType="phone"
+            android:layout_below="@+id/pwd_twice"
+            android:paddingLeft="38dp"
+            android:hint="请输入手机号" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:inputType="textPostalAddress"
+            android:layout_below="@+id/phone"
+            android:paddingLeft="38dp"
+            android:hint="请输入邮箱"
+            />
+
+        <EditText
+        android:id="@+id/phoneCodes"
+        android:layout_width="203dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/email"
+        android:ems="10"
+        android:hint="请输入验证码" />
+        <ImageView
+        android:id="@+id/showCode"
+        android:layout_width="154dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="220dp"
+        android:background="@android:color/holo_red_light"
+        android:clickable="true"
+        android:onClick="onClick" />
+        <Button
+        android:id="@+id/register_btn_sure"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneCodes"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/chagne_btn_color1"
+        android:text="注册"
+        android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消注册"
+            android:layout_below="@+id/register_btn_sure"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textColor="#42A4F3"
+            android:layout_alignParentRight="true"/>
+        <View
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/btn_cancel"
+            android:layout_alignParentRight="true"
+            android:background="#42A4F3"/>
+    </RelativeLayout>
+</RelativeLayout>

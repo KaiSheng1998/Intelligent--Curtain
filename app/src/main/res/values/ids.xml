@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="resetpwd_edit_name" type="id" />
+    <item name="resetpwd_edit_pwd_old" type="id" />
+    <item name="resetpwd_edit_pwd_new" type="id" />
+    <item name="register_btn_sure" type="id" />
+    <item name="et_registeractivity_phoneCodes" type="id" />
+    <item name="iv_registeractivity_showCode" type="id" />
+</resources>

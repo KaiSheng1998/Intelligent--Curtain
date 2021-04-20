@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/gg">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/state"
+    android:text="当前窗帘状态"
+    android:textSize="35dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/login_view"
+        android:layout_width="320dp"
+        android:layout_height="650dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="100dp">
+
+
+        <ImageView
+            android:id="@+id/temp"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/temp" />
+
+        <ImageView
+            android:id="@+id/humi"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/temp"
+            android:layout_marginTop="17dp"
+            android:src="@mipmap/humi" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/humi"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/light" />
+
+
+        <TextView
+            android:id="@+id/text_temp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:hint="温度"
+            android:paddingLeft="38dp"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/text_humi"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_temp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="湿度"
+            android:paddingLeft="38dp"
+            android:textSize="35dp" />
+
+
+        <TextView
+            android:id="@+id/text_light"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_humi"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"
+            android:hint="光强"
+            android:paddingLeft="38dp"
+            android:textSize="35dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input1"
+            android:layout_below="@+id/text_light"
+            android:layout_marginTop="15dp"
+            >
+            <ImageView
+                android:id="@+id/temp1"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/light"
+                android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lighttex"
+            android:layout_toRightOf="@+id/temp1"
+            android:text="开阈值："
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="225dp"
+            android:layout_height="45dp"
+            android:paddingLeft="145dp"
+            android:background="@drawable/border" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:id="@+id/submit"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-5dp"
+            android:text="提交"/>
+    </RelativeLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/input_sign1"
+    android:layout_below="@+id/input1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input3"
+            android:layout_below="@+id/input_sign1"
+            android:layout_marginTop="15dp"
+            >
+            <ImageView
+                android:id="@+id/temp2"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/light"
+                android:layout_marginTop="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lightinput"
+                android:layout_toRightOf="@+id/temp2"
+                android:text="关阈值："
+                android:textSize="30dp"/>
+
+            <EditText
+                android:id="@+id/input2"
+                android:layout_width="225dp"
+                android:layout_height="45dp"
+                android:paddingLeft="145dp"
+                android:background="@drawable/border" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:id="@+id/submit2"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-5dp"
+                android:text="提交"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_sign2"
+            android:layout_below="@+id/input3"/>
+
+        <Button
+            android:id="@+id/Turn_on"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/change_btn_color2"
+            android:text="打开窗帘"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Turn_stop"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Turn_on"
+            android:layout_alignStart="@+id/Turn_on"
+            android:layout_alignLeft="@+id/Turn_on"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/change_btn_color3"
+            android:text="停止窗帘"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Turn_off"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/change_btn_color2"
+            android:text="关闭窗帘"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Turn_stop"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/change_btn_color4"
+            android:text="退出系统"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
